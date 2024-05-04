@@ -1,8 +1,20 @@
 body {
     font-family: Arial, sans-serif;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        rgb(255 255 0 / 50%),
+        rgb(0 0 255 /50%)
+    ) no-repeat center fixed;
+    
+}
+.bigtitle{
+    text-align: center;
+    color: blue;
 }
 #tic-tac-toe-board {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 2px;
@@ -18,9 +30,18 @@ body {
 .cell:hover {
     background-color: #ddd;
 }
+.verticallycenter{
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+}
 #reset-button {
     margin-top: 10px;
     padding: 5px 10px;
     font-size: 1em;
     cursor: pointer;
+    
 }
